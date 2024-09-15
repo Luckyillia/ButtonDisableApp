@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Inicjalizacja przycisku poprzez ID z pliku XML
         buttonDisable = findViewById(R.id.buttonDisable);
         buttonEnable = findViewById(R.id.buttonEnable);
         counter = findViewById(R.id.counter);
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         buttonEnable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Po kliknięciu przycisk zostaje dezaktywowany
                 buttonDisable.setEnabled(true);
 
             }
